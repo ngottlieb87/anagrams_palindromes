@@ -6,17 +6,16 @@ describe("#anagrams") do
 
   it("check if two words are anagrams") do
     words = Words_check.new("tea","eat")
-    expect(words.anagram_check).to(eq("These are anagrams!"))
+    expect(words.anagram_check).to(eq("Anagram!"))
   end
 
-  it("Return true non dependant on case") do
-    words = Words_check.new("Sister","reSist")
-    expect(words.anagram_check).to(eq("These are anagrams!"))
+  it("Return true regardless of case") do
+    words1 = Words_check.new("Sister","reSist")
+    expect(words1.anagram_check).to(eq("Anagram!"))
   end
-
-  it("Return true regardless case") do
-    words = Words_check.new("Sister","reSist")
-    expect(words.anagram_check).to(eq("These are anagrams!"))
+  #
+  it("Checks word to see if your anagram is also a palindrome") do
+    words2 = Words_check.new("racecar","ccarera")
+    expect(words2.anagram_check).to(eq("Your word is a palindrome and an anagram."))
   end
-
 end

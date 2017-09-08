@@ -8,13 +8,16 @@ class Words_check
   def anagram_check
     first_word = @word1
     second_word = @word2
+
     sorted_first = first_word.downcase.split('').sort.join
     sorted_second = second_word.downcase.split('').sort.join
 
-    if(sorted_first === sorted_second)
-       "These are anagrams!"
-    else
-       "Nope, these are not anagrams."
-   end
- end
+  if((first_word === first_word.reverse && sorted_first === sorted_second)||(second_word === second_word.reverse && sorted_first === sorted_second))
+    "Your word is a palindrome and an anagram."
+   elsif(sorted_first === sorted_second)
+      "Anagram!"
+   else
+     "Nope, these are not anagrams"
+    end
+  end
 end
