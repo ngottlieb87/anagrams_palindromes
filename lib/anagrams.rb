@@ -8,8 +8,8 @@ class Words_check
   def anagram_check
     first_word = @word1
     second_word = @word2
-    sorted_first = first_word.split('').sort.join
-    sorted_second = second_word.split('').sort.join
+    sorted_first = first_word.downcase.split('').sort.join
+    sorted_second = second_word.downcase.split('').sort.join
 
     if(sorted_first === sorted_second)
       true
