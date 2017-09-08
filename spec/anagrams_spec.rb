@@ -13,9 +13,14 @@ describe("#anagrams") do
     words1 = Words_check.new("Sister","reSist")
     expect(words1.anagram_check).to(eq("Anagram!"))
   end
-  #
+
   it("Checks word to see if your anagram is also a palindrome") do
     words2 = Words_check.new("racecar","ccarera")
     expect(words2.anagram_check).to(eq("Your word is a palindrome and an anagram."))
+  end
+
+  it("Checks to see if word has vowels") do
+    words3 = Words_check.new("ddd","dad")
+    expect(words3.anagram_check).to(eq("Not a real word"))
   end
 end
