@@ -12,13 +12,15 @@ class Words_check
     sorted_second = second_word.downcase.split('').sort.join
 
     if(sorted_first.scan(/[aeiou]/).count>=1 && sorted_second.scan(/[aeiou]/).count>=1 )
-    if((first_word === first_word.reverse && sorted_first === sorted_second)||(second_word === second_word.reverse && sorted_first === sorted_second))
-      "Your word is a palindrome and an anagram."
-     elsif(sorted_first === sorted_second)
-        "Anagram!"
-     else
-       "Nope, these are not anagrams"
-      end
+      if((first_word === first_word.reverse && sorted_first === sorted_second)||(second_word === second_word.reverse && sorted_first === sorted_second))
+        "Your word is a palindrome and an anagram."
+       elsif(sorted_first === sorted_second)
+          "Anagram!"
+        elsif(Array(sorted_first).none? {|x| Array(sorted_second).include?(x)})
+          "Your words are antigrams"
+       else
+         "Nope, these are not anagrams"
+        end
     else
       "Not a real word"
     end
