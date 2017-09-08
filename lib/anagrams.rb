@@ -12,9 +12,9 @@ class Words_check
     sorted_second = second_word.downcase.split('').sort.join
 
     if(sorted_first === sorted_second)
-      true
+       "These are anagrams!"
     else
-      false
+       "Nope, these are not anagrams."
    end
  end
 end
