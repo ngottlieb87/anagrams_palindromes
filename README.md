@@ -11,7 +11,6 @@ _This webpage will take your two words and let you know if it's an anagram and/o
 ## Setup
 
 * _Open Web Browser._
-* _type https://ngottlieb87.github.io/anagrams_palindromes into url bar._
 * _In terminal use git to clone repository to determined destination_
 * _run script file in terminal_
 
