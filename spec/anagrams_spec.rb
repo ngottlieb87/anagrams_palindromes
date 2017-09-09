@@ -24,7 +24,7 @@ describe("#anagrams") do
     expect(words3.anagram_check).to(eq("Not a real word"))
   end
   it("Checks if words share no common letters") do
-    words4 = Words_check.new("hello","bye")
+    words4 = Words_check.new("hello","byi")
     expect(words4.anagram_check).to(eq("Your words are antigrams"))
   end
 end
