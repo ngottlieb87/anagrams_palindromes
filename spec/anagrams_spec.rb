@@ -27,4 +27,8 @@ describe("#anagrams") do
     words4 = Words_check.new("hello","byi")
     expect(words4.anagram_check).to(eq("Your words are antigrams"))
   end
+  it("Removes numbers, special characters, and spaces from words") do
+    words4 = Words_check.new("%2race $car","car 3#race!")
+    expect(words4.anagram_check).to(eq("Your word is a palindrome and an anagram."))
+  end
 end

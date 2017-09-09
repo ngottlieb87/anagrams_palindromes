@@ -1,6 +1,6 @@
 # Anagrams and Antigrams
 
-#### _Anagrama and Palindrome script_
+#### _Anagram and Palindrome _
 
 #### By _**Noah Gottlieb**_
 
