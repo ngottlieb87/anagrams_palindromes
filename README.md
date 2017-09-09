@@ -25,8 +25,8 @@ _This webpage will take your two words and let you know if it's an anagram and/o
 | Determine if words are anagrams | "rat" , "tar" | "Anagram!" |
 | Determine if its also a palindrome |  "racecar", "carrace"| "Your word is a palindrome and an anagram." |
 | Determine if words are real |  "ddd", "dad" | "Not a real word" |
-| Determine if words are antigrams|  "hi", "bye" | "Your words are antigrams" | | Remove special characters, spaces, numbers | "$ t 99op", " po #!@t22 " | "Anagram!" |
-
+| Determine if words are antigrams|  "hi", "bye" | "Your words are antigrams" |
+| Remove special chars, numbers, space| "1t5$o()p","p! o 2t" | "Anagram!" |
 ## Support and contact details
 
 _For support you can reach me at:_
