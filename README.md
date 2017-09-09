@@ -1,6 +1,6 @@
-# Anagrams and Antigrams
+# Anagrams and Antigrams And Palindromes, Oh my!
 
-#### _Anagram and Palindrome _
+#### _Checks if words are anagrams, antigrams, or palindromes_
 
 #### By _**Noah Gottlieb**_
 
